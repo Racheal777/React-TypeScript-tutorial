@@ -1,9 +1,14 @@
 import React from 'react'
 
-export default function Navbar() {
+//children props
+type HeadingProps = {
+    children:string
+}
+
+export default function Navbar(props:HeadingProps) {
   return (
     <div>
-       <h1>navbar</h1>
+       <h1>{props.children}</h1>
     </div>
   )
 }

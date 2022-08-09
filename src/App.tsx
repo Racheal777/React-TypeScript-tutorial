@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 
 function App() {
   return (
-    <div className="App bg-gradient-to-r from-amber-800">
+    <div className="App">
       <h1 className='text-cyan-400'>Welcome to React</h1>
 
       <Routes>
