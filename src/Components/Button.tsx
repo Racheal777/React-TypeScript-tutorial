@@ -7,7 +7,7 @@ type ButtonProps = {
 export default function Button(props:ButtonProps) {
   return (
     <div>
-        <button className='bg-orange-600' onClick={(event)=> props.handleClick(event, 10)}>Click Me</button>
+        <button className='bg-orange-600 p-2 m-4' onClick={(event)=> props.handleClick(event, 10)}>Click Me</button>
     </div>
   )
 }

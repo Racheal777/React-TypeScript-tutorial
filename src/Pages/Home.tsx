@@ -7,6 +7,9 @@ import Status from "../Components/Status";
 import Oscar from "../Components/Oscar";
 import Button from "../Components/Button";
 import Input from "../Components/Input";
+import Container from "../Components/Container";
+import LoggedIn from "../Components/state/LoggedIn";
+import User from "../Components/state/User";
 
 export default function Home() {
   const personName = {
@@ -62,6 +65,18 @@ export default function Home() {
       <section>
           <Input value="Ama" handleChange={event => console.log(event)}/>
       </section>
+
+      <section>
+          <LoggedIn/>
+      </section>
+
+          <section>
+              <User/>
+          </section>
+
+      <div>
+          <Container styles={{border: '2px solid black', padding:'2rem', backgroundColor: 'cyan'}}/>
+      </div>
     </div>
   );
 }
